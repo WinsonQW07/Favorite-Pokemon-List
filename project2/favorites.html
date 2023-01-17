@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/pokemon_font/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/retroica/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/tommy/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/pokemon-classic/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <!-- <script src="src/main.js" type="module"></script> -->
+  <script src="src/favorites.js" type="module"></script>
+  <script src="src/loader.js" type="module"></script>
+</head>
+<body class="hero is-danger">
+
+	<my-header data-title = "Favorite Pokemon List"></my-header>
+
+  <main class="hero is-danger">
+    <h1 class="title mx-4 my-3">Favorites</h1>
+
+    <p class="mx-4 is-size-4" id ="favBody">
+      Come see all of your favorite Pokemon!
+    </p>
+
+    <div class="field is-grouped mx-4 mt-3">
+      <button class="button is-rounded mr-4" type="button" id="prevButton">&laquo; Previous </button>
+      <p class="mr-4 is-size-4" id="pageNum"></p>
+      <button class="button is-rounded mr-4" type="button" id="nextButton">Next &raquo;</button>
+      <button class ="button is-rounded is-warning mx" type="button" id="delButton">Delete All</button>
+    </div>
+
+    <p class="mx-4 is-size-5" id ="response"></p>
+  
+    <div class="fav-list"></div>
+  </main>
+  <my-footer></my-footer>
+</body>
+
+</html>

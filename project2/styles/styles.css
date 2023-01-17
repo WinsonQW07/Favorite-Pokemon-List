@@ -1,0 +1,38 @@
+
+.fav-list, .comm-list
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+my-card, my-ranking
+{
+    margin: 0 .2rem 1rem .2rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+my-ranking
+{
+    margin: 0 0 1rem 0;
+}
+
+h1
+{
+    font-family: 'made_tommybold';
+}
+
+#playButton:hover, #prevButton:hover, #nextButton:hover, #applyButton:hover, #favButton:hover, #randButton:hover
+{
+    background-color: black;
+    color:white;
+}
+
+#delButton:hover
+{
+    background-color: black;
+    color:red;
+    font-weight: bold;
+}
+
+body { min-height: 100vh; }

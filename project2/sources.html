@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sources</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/pokemon_font/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/retroica/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/tommy/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <!-- <script src="src/main.js" type="module"></script> -->
+  <script src="src/loader.js" type="module"></script>
+</head>
+<body class="hero is-danger">
+
+	<my-header data-title = "Favorite Pokemon List"></my-header>
+  
+  <div class="mx-5 my-5 px-2">
+
+        <h1 class="is-size-1 title">Documentation</h1>
+   
+        <div>
+          <h2 class="subtitle">Project Requirements</h2>
+          <ol class="ml-6 mb-5">
+            <li><a href="https://github.com/tonethar/IGME-330-Fall-2021/blob/main/projects/project-1.md">Project 1 Overview</a></li>
+            <li><a href="https://github.com/tonethar/IGME-330-Fall-2021/blob/main/projects/project-2.md">Project 2 Overview</a></li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 class="subtitle">Resources Utilized</h2>
+          <ol class="ml-6 mb-5">
+            <li><a href="https://www.dafont.com/made-tommy.font">Tommy Font</a></li>
+            <li><a href="https://www.dafont.com/retroica.font">Retroica Font</a></li>
+            <li><a href="https://www.dafont.com/pokemon-classic.font">Classic Pokemon Font</a></li>
+            <li><a href="https://www.dafont.com/pokemon.font">Pokemon Title Font</a></li>
+            <li><a href="https://www.w3schools.com/html/default.asp">W3schools</a></li>
+            <li><a href="https://bulma.io/documentation/">Bulma</a></li>
+            <li><a href="https://www.youtube.com/c/TomSalazar/videos">Type images</a></li>
+            <li><a href="https://www.popsockets.com/en-us/p/ultra-ball/101080.html?lang=en_US">Ultra Ball image</a></li>
+            <li><a href="https://th.bing.com/th/id/R.ef87b2e921e4c102a3ae1eaf3b645504?rik=OoXJRYZQ9mZJ5g&riu=http%3a%2f%2frunean.com%2fwp-runsoftwareblog%2fwp-content%2fuploads%2f2013%2f07%2fquestion-mark-320x320.png&ehk=wDEH0i789eDYDp5mnb3ghMTvARlS2NWssq6CDOEIPcE%3d&risl=&pid=ImgRaw&r=0">Question mark image</a></li>
+            <li><a href="https://cdn.dribbble.com/users/172519/screenshots/3520576/dribbble-spinner-800x600.gif">Loading spinner</a></li>
+            <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+            <li><a href="https://downloads.khinsider.com/game-soundtracks/album/pokemon-heartgold-and-soulsilver/153%2520The%2520Hall%2520of%2520Fame.mp3">Hall of Fame Audio</a></li>
+            <li><a href="https://forum.freecodecamp.org/">Free Code Camp</a></li>
+            <li><a href="https://www.youtube.com/watch?v=quSR_ZrVz6Y">Confetti Tutorial</a></li>
+            <li><a href="https://github.com/CoderZ90/confetti/blob/main/confetti.js">Confetti Github</a></li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 class="subtitle">API</h2>
+          <ol class="ml-6 mb-5">
+            <li><a href="https://pokeapi.co/">API Home</a></li>
+            <li><a href="https://pokeapi.co/docs/v2">API Docs</a></li>
+            <li><a href="https://pokeapi.co/api/v2/type/">API Endpoint</a></li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 class="subtitle">Noteworthy</h2>
+          <ol class="ml-6 mb-5">
+            <li>Utilized the Bulma framework to make the app mobile friendly. The framework was used to give color and spacing
+              to many elements of each page. The select lists and buttons were customized with Bulma to give them more style.
+            </li>
+            <li>The JavaScript code is written in ES6 modules which imports and exports appriopriate data.</li>
+            <li>The user's favorited Pokemon are saved to the local storage as an array. The Pokemon are displayed within the Favorites tab. 
+              They are shown in multiple sections with up to 10 Pokemon being shown at once. The Pokemon can
+              be removed from the list either individually or all together. Each Pokemon is created using a web component.
+              Along with the Pokemon, the header and footer were also created using components.
+            </li>
+            <li>
+              The app displays states that lets the user know that something is currently happening. The states consist of text that lets the user 
+              know that they must do something first and a loading gif that indicates something is trying to be displayed.
+            </li>
+            <li>Fetch was used to get data from the Pokemon API. The data included each of the 18 Pokemon types along with the data of each Pokemon.
+            </li>
+            <li>Firebase was utilized to save data from all users. Every Pokemon that is favorited by a user will be saved into the database. The most favorited Pokemon will be displayed in the "Community" tab.</li>
+            <li>The "Community" tab has a button that plays music and shows a confetti animation. The button can be pressed to stop both of these features.</li>
+            <li>Various buttons will change to show a loading animation to represent data being loaded in.</li>
+            <li>The "Favorites" tab better shows the number of favorite Pokemon by showing the number of pages and what page the user is currently on.</li>
+            <li>The app was modified so you no longer need to push a button to create a list of Pokemon after selecting a type. The button was modified to only change the list if there
+              are any filters applied.
+            </li>
+            <li>User data within the app is saved to the local storage. Whenever the user comes back to the page, their previous filters, types, and Pokemon will be displayed.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 class="subtitle">Grading</h2>
+          <ol class="ml-6 mb-5">
+            <li>Fetch was used to return data from the API.</li>
+            <li>The home page tells the user what the app does and what they can expect from the tabs. It also includes a button that randomly changes
+              the image into a different type.
+            </li>
+            <li>The App has radio buttons and select lists to filter and display the Pokemon that the user wants. The favorite button allows the user to
+              save the current Pokemon into the local storage.
+            </li>
+            <li>
+              The Favorites page has ways for the user to delete every Pokemon or just one at a time. The user is able to press the next and previous buttons to view another
+              group of Pokemon they have saved.
+            </li>
+            <li>
+              The navbar will highlight and bold the current page that the user is on.
+            </li>
+            <li>Indicators have been created to let the user know that they may need to do something first or that something is loading.</li>
+            <li>User data is saved to the local storage and returns it back to the user.</li>
+            <li>Firebase was used for this project and saves the Pokemon's name and number of times it was favorited.</li>
+          </ol>
+        </div>
+
+        <div>
+          <h2 class="subtitle">To Do</h2>
+          <ol class="ml-6 mb-5">
+            <li>The random button and images in the Home tab could be changed to a carousel. It would make it easier if a person wanted to see
+              all of the types rather than trying to do it randomly or going to the App tab.
+            </li>
+            <li>
+              In the App, it might help if there were more filter options. Alternatively, maybe add a function that lets the user view multiple Pokemon at once rathern than just one.
+            </li>
+            <li>
+              In the Favorites tab, it might look nicer if each Pokemon had more data about themselves. The buttons could also be changed or arranged to show that these buttons do something while the other one 
+              is probably not one you want to carelessly press.
+            </li>
+            <li>More media queries should be utilized to make the app look better on smaller devicecs. The most notable change would probably be the font sizes of certain elements.</li>
+            <li>The Favorites tab does not have too many indicators since the images load in by the time the user gets to the page. It might be worthwhile to add more indicators in case there are slow devices that may not immediately
+              load in the images.
+            </li>
+          </ol>
+        </div>
+
+  </div>
+
+  <my-footer></my-footer>
+
+</body>
+
+</html>

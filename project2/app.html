@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/pokemon_font/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/retroica/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/tommy/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <script src="src/main.js" type="module"></script>
+  <script src="src/app.js" type="module"></script>
+  <script src="src/loader.js" type="module"></script>
+</head>
+<body class="hero is-danger">
+
+<my-header data-title = "Favorite Pokemon List"></my-header>
+<!-- <pokemon-type poke-type="Type"></pokemon-type> -->
+
+<div class="hero is-danger">
+  <div class ="columns is-vcentered">
+    <div class="column is-6 mx-5">
+      <h1 class="title my-3">Pokemon App</h1>
+      <h3 class="mt-2 is-size-4 is-underlined">Filter</h3>
+      <div class="is-size-5">
+        <input type="radio" id="all" name="type_num" value="all" checked="checked">
+        <label for="all">Primary & Secondary</label>
+        <input type="radio" id="single" name="type_num" value="primary">
+        <label for="single">Primary Typing</label>
+        <input type="radio" id="dual" name="type_num" value="secondary">
+        <label for="dual">Secondary Typing</label>
+      </div>
+      
+      <div class="mb-2">
+        <h3 class="mt-2 is-size-4 is-underlined">Type</h3>
+      <p class="mt-3 is-size-5">Select a type to to create a list of Pokemon to look through. Press the button to apply any filters to the Pokemon list.</p>
+      <div class="field is-grouped mt-4">
+        <div class="select is-rounded">
+          <select id="type-select"></select>
+        </div>
+        <button class="button is-rounded is-normal is-warning mx-4" type="button" id="applyButton">Apply Filter</button>
+      </div>
+      </div>
+
+      <div class="mb-3 mt-3">
+        <h3 class="mt-2 is-size-4 is-underlined">Pokemon</h3>
+        <p class="mt-3 is-size-5">Select a Pokemon to view it. Press "Favorite" to add it to your favorites list.</p>
+
+        <div class="field is-grouped mt-4">
+          <div class="select is-rounded">
+            <select class="select" id="pokemon-select">
+              <option value="first">Please generate a type</option>
+            </select>
+          </div>
+          <button class="button is-rounded is-normal mx-4 is-warning" type="button" id="favButton">Favorite</button>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="column is-5">
+          <div class="section hero is-light has-text-centered">
+            <p class="is-size-5" id ="body"> </p>
+            <p class="is-size-5" id ="response">  </p>
+          </div>
+      </div>
+      <div class="column is-1"></div>
+  </div>
+</div>
+
+<my-footer></my-footer>
+</body>
+
+</html>

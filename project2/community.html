@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/pokemon_font/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/retroica/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/tommy/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/pokemon-classic/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <script src="src/community.js" type="module"></script>
+  <script src="src/loader.js" type="module"></script>
+  <script src="src/music.js" type="module"></script>
+  <script src="src/confetti.js" type="module"></script>
+</head>
+
+<body class="hero is-danger">
+  <audio src="audio/victory.mp3"></audio>
+	<my-header data-title = "Favorite Pokemon List"></my-header>
+
+  <main class="hero is-danger">
+    <h1 class="title mx-4 my-3">Community</h1>
+
+    <div class="field is-grouped mx-4 mt-3">
+
+      <p class="mr-4 is-size-4" id ="favBody">
+        Top 10 Most Favorited Pokemon
+      </p>
+      <div>
+        <button class ="button is-rounded fas fa-volume-up" type="button" id="playButton">Play Music</button>
+      </div>
+    </div>
+
+    <p class="mx-4 is-size-5" id ="response">Loading...</p>
+  
+    <div class="comm-list"></div>
+
+  </main>
+  <my-footer></my-footer>
+</body>
+
+</html>

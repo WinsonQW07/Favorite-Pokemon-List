@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorite Pokemon Types</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/pokemon_font/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/retroica/stylesheet.css">
+  <link rel = "stylesheet" type = "text/css" href = "fonts/tommy/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <!-- <script src="src/main.js" type="module"></script> -->
+  <script src="src/loader.js" type="module"></script>
+  <script src="src/image.js" type="module"></script>
+</head>
+<body class="hero is-danger">
+
+<my-header data-title = "Favorite Pokemon List"></my-header>
+  
+<div class="hero is-danger">
+ 
+<section class="section">
+  <div class="container">
+    <div class="columns">
+
+      <div class="column is-5">
+
+        <h1 class="is-size-1 title">Home Page</h1>
+        <button class="button is-rounded is-normal mb-4 is-warning" type="button" id="randButton">Randomize Type</button>
+        <p class="is-size-5">
+          Welcome to the Favorite Pokemon list app.
+          In the "App" tab, choosing a Pokemon type will create a list of Pokemon to look through with the corresponding typing. Clicking on the Favorite button will add the current Pokemon
+          to your personal favorites list. You can view all of your favorited Pokemon within the "Favorites" tab. In the "Community" tab, you view the top favorited Pokemon selected by all users.
+        </p>
+      </div>
+
+      <div class="column is-2 has-text-centered"></div>
+
+      <div class="column is-5">
+        <p id="response"></p>
+        <p id="images"></p>
+
+    </div>
+
+    </div>
+  </div>
+</section>
+</div>
+<my-footer></my-footer>
+
+</body>
+
+</html>
